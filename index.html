@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas UAS - Aplikasi Perpustakaan</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img
+        src="image/LogoPerpustakaan.png"
+        alt="Logo Perpustakaan"
+        class="logo"
+      />
+      <nav>
+        <ul>
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#transaksi">Transaksi</a></li>
+          <li><a href="#profil">Profil</a></li>
+          <li><a href="#login">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="beranda">
+        <h1>Selamat Datang di Aplikasi Perpustakaan</h1>
+        <p>
+          Perpustakaan kami adalah tempat yang sempurna untuk mengeksplorasi
+          dunia pengetahuan dan imajinasi. Dengan koleksi buku yang luas dan
+          beragam, kami menyediakan sumber daya untuk segala usia dan minat.
+        </p>
+        <p>Apa yang Kami Tawarkan:</p>
+        <ul>
+          <li>Koleksi Buku yang Beragam</li>
+          <li>Fasilitas Nyaman</li>
+          <li>Layanan Pemesanan dan Peminjaman</li>
+          <li>Kegiatan Edukatif</li>
+        </ul>
+        <p>
+          Misi Kami: Kami berkomitmen untuk meningkatkan minat baca dan
+          memberikan akses mudah ke sumber daya pengetahuan bagi semua orang.
+          Dengan semangat literasi, kami berharap dapat menciptakan komunitas
+          yang lebih cerdas dan berwawasan.
+        </p>
+      </section>
+
+      <section id="transaksi">
+        <h2>Formulir Transaksi</h2>
+        <form id="form-transaksi">
+          <label for="nama-buku">Nama Buku:</label>
+          <input type="text" id="nama-buku" name="nama-buku" required />
+          <label for="jumlah">Jumlah:</label>
+          <input type="number" id="jumlah" name="jumlah" required />
+          <label for="kategori">Kategori:</label>
+          <input type="text" id="kategori" name="kategori" required />
+          <button type="submit">Simpan</button>
+        </form>
+        <h3>Daftar Transaksi</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Nama Buku</th>
+              <th>Jumlah</th>
+              <th>Kategori</th>
+            </tr>
+          </thead>
+          <tbody id="transaksi-body"></tbody>
+        </table>
+      </section>
+
+      <section id="profil">
+        <h2>Profil Aplikasi</h2>
+        <p>
+          Perpustakaan kami didirikan dengan tujuan untuk menyediakan akses
+          mudah dan terjangkau ke sumber daya pengetahuan bagi semua lapisan
+          masyarakat. Kami percaya bahwa literasi adalah kunci untuk membuka
+          pintu menuju masa depan yang lebih cerah dan berwawasan.
+        </p>
+
+        <h3>Visi:</h3>
+        <p>
+          Menjadi pusat literasi dan pengetahuan terkemuka yang mendorong minat
+          baca serta memberikan kontribusi positif bagi perkembangan masyarakat.
+        </p>
+
+        <h3>Misi:</h3>
+        <ul>
+          <li>
+            Meningkatkan Minat Baca: Mendorong masyarakat untuk menjadikan
+            membaca sebagai bagian dari gaya hidup sehari-hari.
+          </li>
+          <li>
+            Menyediakan Koleksi Berkualitas: Menyediakan koleksi buku yang
+            beragam dan berkualitas, mencakup berbagai bidang ilmu dan minat.
+          </li>
+          <li>
+            Fasilitas Nyaman: Menyediakan fasilitas yang nyaman dan ramah bagi
+            para pengunjung untuk membaca, belajar, dan berdiskusi.
+          </li>
+          <li>
+            Kegiatan Edukatif: Menyelenggarakan berbagai kegiatan edukatif
+            seperti diskusi buku, workshop, dan seminar untuk memperkaya
+            pengetahuan masyarakat.
+          </li>
+          <li>
+            Akses Digital: Mengembangkan layanan perpustakaan digital untuk
+            memudahkan akses informasi di era teknologi.
+          </li>
+        </ul>
+
+        <h3>Fasilitas:</h3>
+        <ul>
+          <li>
+            Ruang Baca: Ruang baca yang nyaman dan tenang dengan akses Wi-Fi
+            gratis.
+          </li>
+          <li>
+            Koleksi Buku: Ribuan buku dari berbagai genre, mulai dari fiksi,
+            non-fiksi, buku anak-anak, hingga referensi akademik.
+          </li>
+          <li>
+            Perpustakaan Digital: Akses ke e-book, jurnal, dan database online.
+          </li>
+          <li>
+            Kegiatan Edukatif: Program rutin seperti storytelling, klub buku,
+            dan pelatihan literasi digital.
+          </li>
+          <li>
+            Area Anak-anak: Ruang khusus untuk anak-anak dengan koleksi buku dan
+            permainan edukatif.
+          </li>
+        </ul>
+
+        <h3>Keanggotaan:</h3>
+        <p>
+          Menjadi anggota perpustakaan kami sangat mudah dan gratis. Anggota
+          perpustakaan memiliki keuntungan seperti:
+        </p>
+        <ul>
+          <li>Peminjaman buku hingga 5 eksemplar sekaligus.</li>
+          <li>Akses ke perpustakaan digital.</li>
+          <li>Prioritas dalam pendaftaran kegiatan edukatif.</li>
+          <li>Newsletter bulanan tentang kegiatan dan koleksi baru.</li>
+        </ul>
+
+        <p>
+          Kami berkomitmen untuk terus berinovasi dan memberikan pelayanan
+          terbaik bagi para pengunjung. Selamat datang di perpustakaan kami,
+          tempat di mana pengetahuan dan imajinasi bertemu!
+        </p>
+      </section>
+
+      <section id="login">
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required />
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+          <button type="submit">Login</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; Tugas UAS - Pemogrman Web 1 Aplikasi Perpustakaan</p>
+    </footer>
+
+    <script>
+      // Script for handling login
+      document
+        .getElementById("login-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const username = document.getElementById("username").value;
+          const password = document.getElementById("password").value;
+
+          if (username === "admin" && password === "password") {
+            alert("Login berhasil!");
+            document.getElementById("login").style.display = "none";
+            document
+              .getElementById("beranda")
+              .scrollIntoView({ behavior: "smooth" });
+          } else {
+            alert("Username atau password salah!");
+          }
+        });
+
+      // Script for handling transactions
+      document
+        .getElementById("form-transaksi")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const namaBuku = document.getElementById("nama-buku").value;
+          const jumlah = document.getElementById("jumlah").value;
+          const kategori = document.getElementById("kategori").value;
+
+          const transaksiBody = document.getElementById("transaksi-body");
+          const row = document.createElement("tr");
+
+          row.innerHTML = `
+                <td>${namaBuku}</td>
+                <td>${jumlah}</td>
+                <td>${kategori}</td>
+            `;
+
+          transaksiBody.appendChild(row);
+
+          document.getElementById("form-transaksi").reset();
+        });
+    </script>
+  </body>
+</html>
